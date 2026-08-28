@@ -2,7 +2,9 @@
 
 本仓库仅用于公开提供演示视频及必要说明，**不包含项目源代码、模型、登录凭据或学校私有数据**。本页面不是在线应用，也不代表作品已正式提交或通过赛事验收。
 
-[播放演示视频（约 2 分 40 秒）](campusmind-demo.mp4)
+[下载演示视频后播放（约 2 分 40 秒）](https://github.com/AndyLauParis/CampusMind-demo/raw/refs/heads/main/campusmind-demo.mp4)
+
+GitHub 文件预览当前不提供内嵌播放器，请下载 MP4 播放。本链接不是在线应用体验地址，也尚未替代更便于评委使用的网页视频播放入口。
 
 ## 观看说明
 
