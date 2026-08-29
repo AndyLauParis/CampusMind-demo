@@ -1,0 +1,9 @@
+const video = document.getElementById("demo-video");
+const status = document.getElementById("playback-status");
+video.addEventListener("loadedmetadata", () => { status.textContent = "视频已就绪 · 支持暂停、拖动和全屏"; });
+video.addEventListener("playing", () => { status.textContent = "正在播放剪辑演示 · 非实时推理"; });
+video.addEventListener("pause", () => { if (!video.ended) status.textContent = "已暂停 · 可拖动查看其他演示片段"; });
+video.addEventListener("waiting", () => { status.textContent = "正在缓冲，请稍候…"; });
+video.addEventListener("ended", () => { status.textContent = "播放完成 · 感谢查看 CampusMind 演示"; });
+video.addEventListener("error", () => { status.textContent = "视频暂时无法读取，请稍后重试或使用下载链接。"; });
+video.querySelector("source").addEventListener("error", () => { status.textContent = "视频暂时无法读取，请稍后重试或使用下载链接。"; });

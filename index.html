@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CampusMind校园智脑参赛只读演示：约2分40秒剪辑、产品闭环与历史真实模型证据边界。">
+  <meta property="og:title" content="CampusMind · 校园智脑">
+  <meta property="og:description" content="校园事件理解、合规证据链与人工复核闭环。">
+  <title>CampusMind｜校园智脑参赛演示</title>
+  <style>
+    :root { color-scheme:light; --ink:#102b25; --muted:#52645f; --paper:#f1f4ed; --accent:#087c5c; --line:#c8d4ca; --card:#e6eee5; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif; }
+    main { max-width:1160px; padding:36px 32px 64px; margin:auto; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding-bottom:24px; border-bottom:1px solid var(--line); }
+    .brand { font:700 23px Georgia,serif; letter-spacing:-.5px; }
+    .mode { color:var(--accent); border:1px solid #8fb7a7; border-radius:999px; padding:7px 12px; font-size:12px; font-weight:700; }
+    .heading { display:flex; align-items:end; justify-content:space-between; gap:24px; margin:32px 0 22px; }
+    .eyebrow { color:var(--accent); font-size:12px; letter-spacing:2px; font-weight:700; }
+    h1 { font-size:clamp(28px,4vw,44px); letter-spacing:-1.4px; margin:10px 0 0; }
+    .time { font:22px Georgia,serif; white-space:nowrap; }
+    video { display:block; width:100%; aspect-ratio:16/9; background:#091811; border-radius:9px; }
+    .caption { display:flex; gap:16px; justify-content:space-between; margin-top:12px; font-size:13px; color:var(--muted); }
+    a { color:var(--accent); text-underline-offset:5px; }
+    a:focus-visible, video:focus-visible { outline:3px solid var(--accent); outline-offset:5px; }
+    .flow { display:grid; grid-template-columns:repeat(5,1fr); margin:34px 0; border:1px solid var(--line); border-radius:9px; overflow:hidden; }
+    .flow article { min-height:130px; padding:20px; border-right:1px solid var(--line); background:#f7f8f3; }
+    .flow article:last-child { border-right:0; }
+    .flow span { color:var(--accent); font:700 12px Georgia,serif; }
+    .flow strong { display:block; margin:24px 0 7px; font-size:15px; }
+    .flow p { margin:0; color:var(--muted); font-size:12px; line-height:1.6; }
+    .facts { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:26px 0; }
+    .facts article { padding:20px; background:var(--card); border-radius:8px; }
+    .facts strong { display:block; font:700 27px Georgia,serif; }
+    .facts span { color:var(--muted); font-size:12px; line-height:1.6; }
+    .note { padding:22px 24px; margin-top:28px; background:#dce9dd; border-left:3px solid var(--accent); line-height:1.85; font-size:14px; }
+    .note strong { display:block; margin-bottom:6px; }
+    .note p { margin:6px 0; }
+    footer { margin-top:28px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:16px; color:var(--muted); font-size:12px; line-height:1.8; }
+    @media(max-width:800px) { .flow { grid-template-columns:1fr; } .flow article { min-height:auto; border-right:0; border-bottom:1px solid var(--line); } .flow article:last-child { border-bottom:0; } .flow strong { margin:10px 0 5px; } }
+    @media(max-width:600px) { main { padding:24px 18px 40px; } .heading { align-items:start; } .time { font-size:18px; } .caption { flex-direction:column; gap:6px; } .facts { grid-template-columns:1fr; } .note { padding:16px; } }
+  </style>
+  <script src="/presentation.js" defer></script>
+</head>
+<body>
+<main>
+  <header><span class="brand">CampusMind · 校园智脑</span><span class="mode">公开只读演示</span></header>
+  <div class="heading"><div><span class="eyebrow">COMPETITION DEMO</span><h1>让校园事件可理解、可复核</h1></div><span class="time">02:40</span></div>
+  <video id="demo-video" controls playsinline preload="metadata" aria-label="CampusMind参赛演示视频，剪辑展示而非实时推理录像"><source src="/campusmind-demo.mp4" type="video/mp4">浏览器无法播放视频，请使用下方下载链接。</video>
+  <div class="caption"><span id="playback-status" role="status" aria-live="polite">正在读取视频信息…</span><a href="/campusmind-demo.mp4" download="CampusMind-demo.mp4">下载 MP4</a></div>
+  <section class="flow" aria-label="产品闭环">
+    <article><span>01</span><strong>视频输入</strong><p>接入存量摄像头；公开演示使用授权代理素材。</p></article>
+    <article><span>02</span><strong>轻量筛选</strong><p>正常画面保持静默，仅候选风险进入模型链路。</p></article>
+    <article><span>03</span><strong>模型观察</strong><p>MiniCPM-o 4.5 补充可见事实、证据窗与不确定性。</p></article>
+    <article><span>04</span><strong>风险升级</strong><p>时序事件引擎聚合连续观察，不用单帧标签定性。</p></article>
+    <article><span>05</span><strong>人工复核</strong><p>教师确认后闭环；AI 不自动认定违纪或评价个人。</p></article>
+  </section>
+  <section class="facts" aria-label="历史验证摘要">
+    <article><strong>10 × 3</strong><span>十类授权代理场景、每类三次历史观测</span></article>
+    <article><strong>13</strong><span>段公开演示许可素材通过文件哈希关联检查</span></article>
+    <article><strong>Human</strong><span>最终决定始终由人工完成，模型只提交事实和候选风险</span></article>
+  </section>
+  <section class="note" aria-label="演示与证据边界">
+    <strong>这是只读剪辑展示，不是当前服务器的现场推理录像。</strong>
+    <p>视频制作于 2026-08-26，组合产品说明、界面截图、许可素材与旁白。历史真实模型证据来自 MiniCPM-o 4.5 与昇腾 A2 / vLLM-Ascend，不代表当前 NPU 在线，也不代表已完成指定 A3 环境验收。</p>
+    <p>十类场景共 30 次观测的 v6 报告，采用 27 次既有观测加 3 次定向复跑后重聚合；固定代理样本结果不能外推为真实校园 7×24 准确率。示例人物不构成真实违纪事实或产品背书。</p>
+  </section>
+  <footer><span>AI 发现事件，不定义学生。<br>AI 观察课堂，不评价教师。</span><span>走廊片段：<a href="https://www.pexels.com/video/students-running-in-the-corridor-8439433/" target="_blank" rel="noopener noreferrer">Pexels 8439433</a> · <a href="https://www.pexels.com/license/" target="_blank" rel="noopener noreferrer">素材许可</a></span></footer>
+</main>
+</body>
+</html>
