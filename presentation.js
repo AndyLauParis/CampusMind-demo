@@ -1,6 +1,8 @@
 const video = document.getElementById("demo-video");
 const status = document.getElementById("playback-status");
-video.addEventListener("loadedmetadata", () => { status.textContent = "视频已就绪 · 支持暂停、拖动和全屏"; });
+const showReady = () => { status.textContent = "视频已就绪 · 支持暂停、拖动和全屏"; };
+if (video.readyState >= 1) showReady();
+else video.addEventListener("loadedmetadata", showReady, { once: true });
 video.addEventListener("playing", () => { status.textContent = "正在播放剪辑演示 · 非实时推理"; });
 video.addEventListener("pause", () => { if (!video.ended) status.textContent = "已暂停 · 可拖动查看其他演示片段"; });
 video.addEventListener("waiting", () => { status.textContent = "正在缓冲，请稍候…"; });
